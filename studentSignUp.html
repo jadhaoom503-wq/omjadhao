@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create an account</title>
+    <link rel="stylesheet" href="studentSignUp.css" />
+  </head>
+  <body>
+    <div class="page">
+      <form class="card">
+        <h1 class="title">Student Registration</h1>
+
+        <div class="flex">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Username" />
+        </div>
+
+        <div class="flex">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" />
+        </div>
+
+        <div class="flex">
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date" />
+        </div>
+
+        <div class="flex">
+          <label for="qualification">Qualification</label>
+          <select id="qualification" name="qualification" required>
+            <option value="highschool">BA</option>
+            <option value="bachelors">BCA</option>
+            <option value="masters">MAC</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <fieldset class="fieldset">
+          <legend>Gender</legend>
+          <div class="radio">
+            <label
+              ><input type="radio" name="gender" value="male" required />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> Female</label
+            >
+          </div>
+        </fieldset>
+
+        <div class="flex">
+          <label for="destination">Current designation</label>
+          <input
+            id="destination"
+            name="destination"
+            type="text"
+            placeholder="Designation"
+          />
+        </div>
+
+        <div class="flex">
+          <label for="experience">Work experience</label>
+          <textarea
+            id="experience"
+            name="experience"
+            rows="3"
+            placeholder="Enter work experience"
+          ></textarea>
+        </div>
+
+        <div class="flex">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Username"
+          />
+        </div>
+
+        <div class="flex">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+          />
+        </div>
+
+        <div class="buttons">
+          <button type="submit" class="btn pri">
+            <a href="studentLogin.html">Submit</a>
+          </button>
+          <button type="button" class="btn sec">
+            <a href="../index.html">Cancel</a>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
